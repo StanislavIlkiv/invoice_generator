@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MathScript Invoice Generator
+
+A slick, single-page invoice builder where you can drop in a logo, enter your service and price, and instantly see a polished invoice preview ready for sharing or print. The project is still under active development—expect rapid iteration and visual tweaks.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies (if you haven't yet):
+
+```bash
+npm install
+```
+
+Run the dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How it works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Drag & drop or upload your logo (PNG/JPG/SVG) and preview instantly.
+- Enter sender, client, invoice number, dates, currency, service, and price—live totals update as you type.
+- Notes section for payment terms; clean layout designed to look good on screen and print.
 
-## Learn More
+## Project status
 
-To learn more about Next.js, take a look at the following resources:
+- Active development: UI/UX is still evolving, and export/sharing options may change.
+- Core preview and form experience are functional; please file issues for bugs or ideas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Editing the UI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Main page: `app/page.tsx`
+- Styling: Tailwind utility classes are used inline.
 
-## Deploy on Vercel
+## Tech stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js 16 (App Router)
+- React 19
+- Tailwind CSS (via Next/TW defaults)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploying
+
+You can deploy wherever you like; Vercel is the quickest path:
+
+```bash
+npm run build
+npm start
+```
+
+Or push the repo to Vercel and import it—no extra config needed.
