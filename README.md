@@ -1,4 +1,4 @@
-# MathScript Invoice Generator
+# Invoice Generator
 
 A slick, single-page invoice builder where you can drop in a logo, enter your service and price, and instantly see a polished invoice preview ready for sharing or print. The project is still under active development—expect rapid iteration and visual tweaks.
 
